@@ -73,12 +73,33 @@
             }
             .credits ul {
                 list-style: none;
-                font-size: 30%;
-                width: 65%;
-                column-count:5;
+                font-size: 35%;
+                width: 86%;
+                column-count:6;
                 /*-moz-column-width: 640px;*/
-                -moz-column-count:5; /* Firefox */
-                -webkit-column-count:5; /* Safari and Chrome */
+                -moz-column-count:6; /* Firefox */
+                -webkit-column-count:6; /* Safari and Chrome */
+            }
+            html.begin body .reveal .state-background {
+                background: url("images/bg-end.png") no-repeat center center fixed;
+                background-size: cover;
+            }
+            html.end body .reveal{
+                background: url("images/bg-end.png") no-repeat center center fixed;
+                background-size: cover;
+            }
+
+            html.end body .reveal section ul {
+                transform: rotate(-6deg);
+            }
+            html.end body .reveal section ul li {
+                color: white;
+            }
+            html.begin body .reveal h2,
+            html.end body .reveal section h2,
+            html.end body .reveal section h3 {
+                color: white;
+                transform: rotate(-6deg);
             }
         </style>
 	</head>
@@ -90,7 +111,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section>
+				<section data-state="begin">
 					<h2>Comment contribuer à Drupal</h2>
 				</section>
 
@@ -308,22 +329,17 @@
                     <blockquote cite="Saisai">Toutes les contributions se valent.</blockquote>
                 </section>
 
-				<section>
-					<section class="credits">
-						<h2>Et vous, où comment aimeriez-vous contribuer ?</h2>
+				<section class="credits" data-state="end">
+						<h2>Et vous, comment aimeriez-vous contribuer ?</h2>
                         <h3>On veut des questions !</h3>
-						<p>
-                            Crédits :
-						</p>
                         <ul>
+                            <li>Crédits :</li>
                             <li>http://www.sxc.hu/photo/89159</li>
                             <li>http://www.sxc.hu/photo/1065245</li>
                             <li>http://www.sxc.hu/photo/1330424</li>
                             <li>http://www.sxc.hu/photo/1182513</li>
                             <li>http://www.sxc.hu/photo/995000</li>
                         </ul>
-
-					</section>
 				</section>
 			</div>
 		</div>
@@ -358,6 +374,10 @@
 					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+            Reveal.addEventListener( 'end', function() {
+                // TODO: Sprinkle magic
+
+            }, false );
 
 		</script>
 
