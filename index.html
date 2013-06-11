@@ -35,16 +35,24 @@
                 -moz-column-count:2; /* Firefox */
                 -webkit-column-count:2; /* Safari and Chrome */
             }
+            div.multi-columns .column {
+                column-span: 1;
+                -moz-column-span:1; /* Firefox */
+                -webkit-column-span:1; /* Safari and Chrome */
+            }
             ul li.special {
                 margin-top: 1em;
             }
             ul li.details {
                 margin-left: 1em;
             }
-            .reveal section img.deco-translation,
-            .reveal section img.deco-time{
+            .reveal section img.deco-translation {
                 margin-left: 1em;
                 margin-bottom: -0.5em;
+            }
+            .reveal section img.deco-time {
+                margin-left: 1em;
+                margin-bottom: 0em;
             }
             .reveal section img.deco-bugs{
                 margin-left: 1em;
@@ -66,6 +74,7 @@
             .credits ul {
                 list-style: none;
                 font-size: 30%;
+                width: 65%;
                 column-count:5;
                 /*-moz-column-width: 640px;*/
                 -moz-column-count:5; /* Firefox */
@@ -89,16 +98,13 @@
 					<h2>Qui sommes-nous ?</h2>
                     <div class="multi-columns">
                         <div class="column">
-                            <p>
-                                Simon Georges<br />
+                            <p>Simon Georges<br />
                                 (@simongeorges, saisai sur #drupal-fr)<br />
                                 Lead développeur chez Makina Corpus<br />
                                 Impliqué dans la communauté depuis 2009<br />
                                 Co-mainteneur de Service Links, Simplenews...
                             </p>
-                            <p>
-                                <img src="images/saisai.jpg" alt="Simon Georges the magnifique"/><br />
-                            </p>
+                            <p><img src="images/saisai.jpg" alt="Simon Georges the magnifique"/><br /></p>
                         </div>
                         <div class="column">
                             <p>
@@ -108,9 +114,7 @@
                                 Impliqué dans la communauté depuis 2009<br />
                                 Co-mainteneur de plusieurs modules Commerce
                             </p>
-                            <p>
-                                <img src="images/artusamak.jpg" alt="Julien Dubois the redoutable"/>
-                            </p>
+                            <p><img src="images/artusamak.jpg" alt="Julien Dubois the redoutable"/></p>
                         </div>
                     </div>
 					<aside class="notes">
@@ -121,19 +125,16 @@
 				<section>
                     <h2>Qui êtes-vous ?</h2>
                     <div class="multi-columns">
-                        <div>
-                            <p>
-                                Codeurs
-                            </p>
+                        <div class="column">
+                            <p>Codeurs</p>
                             <ul>
                                 <li>Déjà contributeurs ?</li>
                                 <li>Curieux ?</li>
                             </ul>
+                            <p>&nbsp;</p>
                         </div>
-                        <div>
-                            <p>
-                                Non-codeurs
-                            </p>
+                        <div class="column">
+                            <p>Non-codeurs</p>
                             <ul>
                                 <li>Gérants ?</li>
                                 <li>Evangélistes ?</li>
@@ -170,7 +171,6 @@
 				<section>
 					<h2>Traduction</h2>
                     <div>
-
                         <ul>
                             <li>Niveau d'anglais en France</li>
                             <li>Nécessité de modules localisés</li>
@@ -192,6 +192,7 @@
                             <li>Rédiger un billet de blog</li>
                             <li class="details">Peu importe le sujet !</li>
                             <li>Bénévolat lors d'événements</li>
+                            <li class="details">Présentation de session</li>
                             <li class="details">Aidez à l'organisation d'un Drupalcamp</li>
                             <li>Organisation d'événements</li>
                             <li class="details">Apport personnel</li>
@@ -275,6 +276,7 @@
                     <h2>Comment se lancer</h2>
                     <div>
                         <ul>
+                            <li>#1day1patch</li>
                             <li><a href="http://drupal.org/node/1242856">Office hours</a></li>
                             <li>Views triage</li>
                             <li>Initiative overview</li>
