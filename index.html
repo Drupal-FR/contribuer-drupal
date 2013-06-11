@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Drupalcamp Paris 2013 - Comment contribuer à Drupal ?</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+        <style>
+            div.multi-columns {
+                column-count:2;
+                /*-moz-column-width: 640px;*/
+                -moz-column-count:2; /* Firefox */
+                -webkit-column-count:2; /* Safari and Chrome */
+            }
+            ul li.special {
+                margin-top: 1em;
+            }
+            ul li.details {
+                margin-left: 1em;
+            }
+            .reveal section img.deco-translation,
+            .reveal section img.deco-time{
+                margin-left: 1em;
+                margin-bottom: -0.5em;
+            }
+            .reveal section img.deco-bugs{
+                margin-left: 1em;
+                margin-bottom: -1.75em;
+            }
+            .reveal section img.deco-code{
+                margin-left: 1em;
+                margin-bottom: -1em;
+            }
+            .reveal section img.deco-meetup {
+                border: none;
+                background: none;
+                box-shadow: none;
+                margin-top: 1.5em;
+            }
+            .credits p {
+                font-size: 50%;
+            }
+            .credits ul {
+                list-style: none;
+                font-size: 30%;
+                column-count:5;
+                /*-moz-column-width: 640px;*/
+                -moz-column-count:5; /* Firefox */
+                -webkit-column-count:5; /* Safari and Chrome */
+            }
+        </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Comment contribuer à Drupal</h2>
+				</section>
+
+				<section>
+					<h2>Qui sommes-nous ?</h2>
+                    <div class="multi-columns">
+                        <div class="column">
+                            <p>
+                                Simon Georges (@saisai)<br />
+                                Lead développeur chez Makina Corpus<br />
+                                Impliqué dans la communauté depuis 200?<br />
+                                Co-coordinateur de la traduction française<br />
+                                Co-mainteneur de Simplenews
+                            </p>
+                            <p>
+                                <img src="images/saisai.jpg" alt="Simon Georges the magnifique"/><br />
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p>
+                                Julien Dubois (@Artusamak)<br />
+                                Lead développeur chez Commerce Guys<br />
+                                Impliqué dans la communauté depuis 2009<br />
+                                Co-mainteneur de plusieurs modules Commerce
+                            </p>
+                            <p>
+                                <img src="images/artusamak.jpg" alt="Julien Dubois the redoutable"/>
+                            </p>
+                        </div>
+                    </div>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+                    <h2>Qui êtes-vous ?</h2>
+                    <div class="multi-columns">
+                        <div>
+                            <p>
+                                Codeurs
+                            </p>
+                            <ul>
+                                <li>Déjà contributeurs ?</li>
+                                <li>Curieux ?</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                Non-codeurs
+                            </p>
+                            <ul>
+                                <li>Gérants ?</li>
+                                <li>Evangélistes ?</li>
+                                <li>Webmasters ?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="multi-columns">
+                        <p>
+                            <img src="images/geek.jpg" /><br />
+                            <img src="images/suited.jpg" />
+                        </p>
+                    </div>
+				</section>
+
+				<section>
+					<h2>Courbe d'apprentissage</h2>
+					<p>
+						<img src="images/learning_curve_tought.png" alt="Courbe d'apprentissage déjantée" />
+					</p>
+				</section>
+
+				<section>
+					<h2>Courbe d'apprentissage plus réaliste</h2>
+					<p>
+                        <img src="images/learning_curve.jpg" alt="Courbe d'apprentissage normale" />
+					</p>
+				</section>
+
+				<section>
+					<blockquote>Il n'y a pas qu'UNE forme de contribution</blockquote>
+				</section>
+
+				<section>
+					<h2>Traduction</h2>
+                    <div>
+
+                        <ul>
+                            <li>Niveau d'anglais en France</li>
+                            <li>Nécessité de modules localisés</li>
+                            <li>Equipe disponible et rôdée</li>
+                            <li>Collaboration</li>
+                            <li>Karma</li>
+                            <li>Pérennité de la contribution</li>
+                            <li class="special">Exemple de Liaz / sebcobin</li>
+                        </ul>
+                        <img src="images/traduction.jpg" class="deco-translation"/>
+                    </div>
+				</section>
+
+
+                <section>
+                    <h2>Donner du temps</h2>
+                    <div>
+                        <ul>
+                            <li>Rédiger un billet de blog</li>
+                            <li class="details">Peu importe le sujet !</li>
+                            <li>Bénévolat lors d'événements</li>
+                            <li class="details">Aidez à l'organisation d'un Drupalcamp</li>
+                            <li>Organisation d'événements</li>
+                            <li class="details">Apport personnel</li>
+                            <li class="details">Création d'un réseau</li>
+                            <li>Formation (Hello Drupal)</li>
+                        </ul>
+                        <img src="images/share.jpg" class="deco-time"/>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Gestion des bugs</h2>
+                    <div>
+                        <ul>
+                            <li>"Up"</li>
+                            <li>Test de patches</li>
+                            <li>Rapports de bug</li>
+                            <li>Aide au tri des issues</li>
+                            <li class="details">Exemple de "Views triage"</li>
+                        </ul>
+                        <img src="images/bugs.jpg" class="deco-bugs"/>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Ecriture de code</h2>
+                    <div>
+                        <ul>
+                            <li>Novice</li>
+                            <li class="details"><a href="http://drupal.org/project/issues/search/drupal?issue_tags=Novice">Voir sur drupal.org</a></li>
+                            <li>Ecriture de tests</li>
+                            <li>Contribution "core"</li>
+                            <li class="details">Drupal 8 !</li>
+                            <li class="details">Contrib (portage de modules)</li>
+                            <li>Co-maintenance</li>
+                        </ul>
+                        <img src="images/code.jpg" class="deco-code"/>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>TODO</h2>
+                    <p>
+                        Diagramme de la mort :)
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Etude de cas / retours d'expérience</h2>
+                    <div>
+                        <ul>
+                            <li>Impliquer les clients</li>
+                            <li class="details">Mettre en valeur votre travail ET le site du client</li>
+                        </ul>
+                        <p>
+                            <img src="images/meetup_logo.png" class="deco-meetup"/>
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Sponsorisation</h2>
+                    <div>
+                        <ul>
+                            <li>Formation gratuite</li>
+                            <li>Formation payante</li>
+                            <li>Drupalcamp</li>
+                            <li>Barcamp</li>
+                            <li>Acquia Large Scale</li>
+                            <li>Temps pour vos équipes</li>
+                            <li>JEI</li>
+                            <li>Visibilité sur page projet</li>
+                        </ul>
+                        <p>
+                            <img src="images/sponsors.jpg" class="deco-sponsors"/>
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Comment se lancer</h2>
+                    <div>
+                        <ul>
+                            <li><a href="http://drupal.org/node/1242856">Office hours</a></li>
+                            <li>Views triage</li>
+                            <li>Initiative overview</li>
+                            <li class="details"><a href="http://groups.drupal.org/drupal-initiatives">Avancement</a></li>
+                            <li class="details"><a href="http://drupal.org/community-initiatives/drupal-core">Liste</a></li>
+                            <li class="special">IRC : #drupal-contribute ; #drupal-fr<br />
+                                @pomliane / @saisai / @sebcorbin</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Quels bénéfices ?</h2>
+                    <div>
+                        <ul>
+                            <li>Réseau</li>
+                            <li>Karma</li>
+                            <li><a href="http://drupal.org/drupalgive">/drupalgive</a></li>
+                            <li>Cercle vertueux</li>
+                            <li>CV en ligne sur Drupal.org</li>
+                            <li>Vous vous sentez utile (!)</li>
+                            <li class="special">Exemple Scald</li>
+                            <li>Exemple Facebook connect</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <blockquote cite="Saisai">Toutes les contributions se valent.</blockquote>
+                </section>
+
+				<section>
+					<section class="credits">
+						<h2>Et vous, où comment aimeriez-vous contribuer ?</h2>
+                        <h3>On veut des questions !</h3>
+						<p>
+                            Crédits :
+						</p>
+                        <ul>
+                            <li>http://www.sxc.hu/photo/89159</li>
+                            <li>http://www.sxc.hu/photo/1065245</li>
+                            <li>http://www.sxc.hu/photo/1330424</li>
+                            <li>http://www.sxc.hu/photo/1182513</li>
+                            <li>http://www.sxc.hu/photo/995000</li>
+                        </ul>
+
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+                width: 1350,
+                mouseWheel: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
