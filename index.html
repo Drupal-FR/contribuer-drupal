@@ -101,6 +101,30 @@
                 color: white;
                 transform: rotate(-6deg);
             }
+
+            section ul .bug {
+                border-radius: 10px;
+                color: white;
+                text-align: center;
+                list-style: none;
+                padding: 0.25em;
+                margin-bottom: 0.5em;
+            }
+            .bug.bug-active {
+                background-color: purple;
+            }
+            .bug.bug-work {
+                background-color: red;
+            }
+            .bug.bug-review {
+                background-color: darkorange;
+            }
+            .bug.bug-tested {
+                background-color: dodgerblue;
+            }
+            .bug.bug-fixed {
+                background-color: lawngreen;
+            }
         </style>
 	</head>
 
@@ -255,10 +279,16 @@
                 </section>
 
                 <section>
-                    <h2>TODO</h2>
-                    <p>
-                        Diagramme de la mort :)
-                    </p>
+                    <h2>Cycle de vie d'une issue</h2>
+                    <ul>
+                        <li class="fragment bug bug-active roll-in">Active</li>
+                        <li class="fragment bug bug-review roll-in">Needs review</li>
+                        <li class="fragment bug bug-work roll-in">Needs work</li>
+                        <li class="fragment bug bug-review roll-in">Needs review</li>
+                        <li class="fragment bug bug-work roll-in">Needs work</li>
+                        <li class="fragment bug bug-tested roll-in">Reviewed & tested</li>
+                        <li class="fragment bug bug-fixed roll-in">Fixed</li>
+                    </ul>
                 </section>
 
                 <section>
